@@ -60,3 +60,5 @@ const projects = [
     gitHubLink: "https:/github.com",
   },
 ];
+
+export {projects};
