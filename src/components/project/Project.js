@@ -1,8 +1,6 @@
-import "./styles.css"
+import "./styles.css";
 
-import project01 from "./../../img/projects/01.jpg";
-
-const Project = ({title, img}) => {
+const Project = ({ title, img }) => {
   return (
     <li className="project">
       <a href="./project-page.html">
