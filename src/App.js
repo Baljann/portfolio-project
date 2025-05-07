@@ -9,22 +9,25 @@ import Projects from "./pages/Projects";
 import Contacts from "./pages/Contacts";
 import Project from "./pages/Project";
 
+import ScrollToTop from "./utils/scrollToTop";
+
 function App() {
   return (
-    <Router>
-      <div className="App">
+    <div className="App">
+      <Router>
+        <ScrollToTop />
         <Navbar />
 
         <Routes>
-          <Route path="/" element={<Home />}/>
-          <Route path="/projects" element={<Projects />}/>
-          <Route path="/project" element={<Project />}/>
-          <Route path="/contacs" element={<Contacts />}/>
+          <Route path="/" element={<Home />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/project/:id" element={<Project />} />
+          <Route path="/contacts" element={<Contacts />} />
         </Routes>
-       
+
         <Footer />
-      </div>
-    </Router>
+      </Router>
+    </div>
   );
 }
 
